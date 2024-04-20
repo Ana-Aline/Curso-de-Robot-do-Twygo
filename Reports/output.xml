@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-04-20T20:21:26.560738" rpa="false" schemaversion="5">
+<suite id="s1" name="Trabalhe Conosco" source="D:\QaCoders\AprendendoConfiguraRobot\Specs\trabalhe_conosco.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-04-20T20:21:27.110047" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-20T20:21:27.109073" elapsed="3.236171"/>
+</kw>
+<test id="s1-t1" name="Test" line="12">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-04-20T20:21:30.347244" level="INFO">Opening url 'https://www.primecontrol.com.br/trabalhe-conosco/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-04-20T20:21:30.347244" elapsed="13.930215"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-20T20:21:44.292572" level="INFO">Clicking element '//*[contains(text(), "Accept")]'.</msg>
+<msg time="2024-04-20T20:21:44.593080" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-20T20:21:44.594080" level="FAIL">Element with locator '//*[contains(text(), "Accept")]' not found.</msg>
+<arg>${trabalheConosco.btnAccept}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-20T20:21:44.290866" elapsed="0.318096">Element with locator '//*[contains(text(), "Accept")]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${trabalheConosco.btnCadastrarCurriculo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.610960" elapsed="0.000000"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>New</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.619492" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${trabalhe_conosco.nome}</arg>
+<arg>${textForm.nome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.621965" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${trabalhe_conosco.cargo}</arg>
+<arg>${textForm.cargo}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.622960" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${trabalhe_conosco.salario}</arg>
+<arg>${textForm.salario}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.624030" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${trabalhe_conosco.email}</arg>
+<arg>${textForm.email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.624957" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${trabalhe_conosco.telefone}</arg>
+<arg>${textForm.telefone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.625094" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>${trabalheConosco.cmbPais}</arg>
+<arg>${textForm.cmbPais}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.625960" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${trabalhe_conosco.estado}</arg>
+<arg>${textForm.estado}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.626505" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${trabalhe_conosco.cidade}</arg>
+<arg>${textForm.cidade}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.626959" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${trabalhe_conosco.bairro}</arg>
+<arg>${textForm.bairro}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.626959" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${trabalhe_conosco.endereco}</arg>
+<arg>${textForm.endereco}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.628008" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${trabalhe_conosco.cep}</arg>
+<arg>${textForm.cep}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.631962" elapsed="0.001052"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${trabalhe_conosco.resumo}</arg>
+<arg>${textForm.resumo}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.634846" elapsed="0.000113"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<arg>${trabalheConosco.curriculo}</arg>
+<arg>${EXECDIR}/Curriculo.pdf</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.635964" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Curriculo.pdf</arg>
+<arg>30</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.636958" elapsed="0.000000"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${trabalheConosco.btnFinalizar}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.636958" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${trabalheConosco.btnFinalizar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.636958" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${trabalheConosco.sucesso}</arg>
+<arg>${textForm.sucesso}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="NOT RUN" start="2024-04-20T20:21:44.637958" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-20T20:21:30.345244" elapsed="14.292714">Element with locator '//*[contains(text(), "Accept")]' not found.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-20T20:21:44.638957" elapsed="2.443069"/>
+</kw>
+<status status="FAIL" start="2024-04-20T20:21:26.562731" elapsed="20.519295"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Trabalhe Conosco">Trabalhe Conosco</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
